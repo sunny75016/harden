@@ -6,6 +6,6 @@ wget -c --no-check-certificate https://kernel.ubuntu.com/~kernel-ppa/mainline/v5
 wget -c --no-check-certificate https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.6/linux-image-unsigned-5.6.6-050606-generic_5.6.6-050606.202004210831_amd64.deb
 wget -c --no-check-certificate https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.6/linux-modules-5.6.6-050606-generic_5.6.6-050606.202004210831_amd64.deb
 dpkg -i *.deb
-echo "Kernel has been updated. See result below."
+echo "Kernel has been updated. The result below may still show older kernel."
 uname -a
-echo "Reboot at your convenience."
+echo "Reboot at your convenience and run <uname -a> to see the new kernel."
