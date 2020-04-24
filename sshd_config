@@ -1,0 +1,46 @@
+#	READ THIS FIRST BEFORE USING
+# This is my hardened sshd_config
+# USE AT YOUR OWN RISK
+# ENSURE YOUR FIREWALL PORTS ARE OPEN
+# TAKE BACK UP OF /etc/ssh/sshd_config first
+# copy file to /etc/ssh/
+# ENSURE YOU ARE USING SSH AND NOT PASSWORDS
+
+Include /etc/ssh/sshd_config.d/*.conf
+
+#Port 22
+#HostKey /etc/ssh/ssh_host_rsa_key
+#HostKey /etc/ssh/ssh_host_ecdsa_key
+#HostKey /etc/ssh/ssh_host_ed25519_key
+
+LogLevel VERBOSE
+
+#LoginGraceTime 2m
+PermitRootLogin yes
+StrictModes yes
+MaxAuthTries 3
+MaxSessions 2
+
+IgnoreRhosts yes
+
+PasswordAuthentication without-password
+PermitEmptyPasswords no
+
+ChallengeResponseAuthentication no
+
+UsePAM no
+AllowAgentForwarding no
+AllowTcpForwarding no
+X11Forwarding no
+PrintMotd no
+TCPKeepAlive no
+Compression no
+#ClientAliveInterval 0
+ClientAliveCountMax 2
+Banner /etc/issue
+
+# Allow client to pass locale environment variables
+AcceptEnv LANG LC_*
+
+# override default of no subsystems
+Subsystem	sftp	/usr/lib/openssh/sftp-server
