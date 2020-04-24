@@ -9,3 +9,6 @@ Here is a list of scripts and a brief description of what they do.
 6. [Additional scripts will be placed here.]
 IMPORTANT - USE AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR YOUR ACTIONS.
 Requests for additional scripts are welcome.
+
+Instructions - On a FRESH Ubuntu 20.04 Droplet on DigitalOcean using SSH keys.
+git clone https://github.com/sunny75016/harden.git && cd harden && chmod +x *.sh && echo "You can use ./harden-all.sh if you wish"
