@@ -1,5 +1,4 @@
 #!/bin/bash
-chmod +x *.sh
 ./harden-kernel.sh
 ./harden-openssl.sh
 ./harden-openssh.sh
