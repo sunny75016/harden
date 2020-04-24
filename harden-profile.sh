@@ -2,6 +2,6 @@
 echo "ulimit -c 0" >> /etc/profile
 echo "* hard core 0" >> /etc/profile
 echo "* soft core 0" >> /etc/profile
-TMOUT=3600
-readonly TMOUT
-export TMOUT
+echo "TMOUT=3600" >> /etc/profile
+echo "readonly TMOUT" >> /etc/profile
+echo "export TMOUT" >> /etc/profile
