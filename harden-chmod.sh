@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 chmod 600 /boot/grub/grub.cfg
 chmod 600 /etc/at.deny
 chmod 600 /etc/crontab 
