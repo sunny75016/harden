@@ -17,3 +17,5 @@ sed -i 's/smtpd_banner.*/smtpd_banner \= \$myhostname ESMTP/' /etc/postfix/main.
 postconf -e disable_vrfy_command=yes > /dev/null
 echo "Installing haveged for random numbers"
 apt-get install haveged -y
+echo "Installing ClamAV antivirus"
+sudo apt-get install clamav -y
