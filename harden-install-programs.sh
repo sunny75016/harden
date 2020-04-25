@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "Installing apt-show-versions"
 apt-get install apt-show-versions -y > /dev/null
 echo "Installing pam"
@@ -6,7 +7,7 @@ apt-get install libpam-cracklib -y > /dev/null
 echo "Installing debsums"
 apt-get install debsums -y > /dev/null
 echo "Installing Rootkit Hunter"
-apt-get install rkhunter -y > /dev/null
+apt-get install rkhunter -y 
 echo "Correcting rkhunter.conf"
 sed -i 's/UPDATE_MIRRORS=0/UPDATE_MIRRORS=1/' /etc/rkhunter.conf > /dev/null
 sed -i 's/MIRRORS_MODE=1/MIRRORS_MODE=0/' /etc/rkhunter.conf > /dev/null
