@@ -1,15 +1,27 @@
 # harden
+
+DESCRIPTION
 Scripts for hardening Ubuntu or Debian droplets on Digital Ocean. Read and understand before running.
 Here is a list of scripts and a brief description of what they do.
-1. harden-kernel.sh updates the kernel to the latest mainline generic build for AMD64 from kernel.org
-2. harden-openssl.sh updates OpenSSL to the latest version from OpenSSL.org
-3. harden-openssh.sh updates OpenSSH to the latest version from OpenSSH.org
-4. harden-lynis.sh installs lynis from github CISOfy/lynis and runs for the first time.
-5. harden-ppa.sh adds my favourite repositaries for apache2, php, nginx and MariaDB (either Bionic or Focal)
-6. [Additional scripts will be placed here.]
+
+./harden-all.sh - IT RUNS ALL OF THE FOLLOWING SCRIPTS.
+./harden-passwords.sh - Add a complex password for root, Create nonroot user, Copy SSH keys across.
+./harden-ufw.sh - Enable ufw firewall with open basic ports 22,25,53,80,110,143,465,587,993,995,etc.
+./harden-ppa.sh - Add repositories for apache2, nginx, php and MariaDB server.
+./harden-kernel.sh - Replace Linux kernel to the more recent version.
+./harden-openssl.sh - Upgrade OpenSSL to the most recent version.
+./harden-openssh.sh - Upgrade OpenSSH to the most recent version.
+./harden-profile.sh - Disable kernel dumps.
+./harden-chmod.sh - Restrict access to certain files and folders.
+./harden-proc.sh - Harden the /proc mount
+./harden-filesystem.sh - Blacklist unnecessary mounts and protocols.
+./harden-install-programs.sh - Install pam, debsums, rkhunter.
+./harden-stig.sh - Some of the other hardening as suggested by STIG.
+./harden-lynis.sh - Installs lynis from github CISOfy/lynis to /home/lynis
+
+INSTALLATION
+Create a fresh Ubuntu 20.04 Droplet on DigitalOcean using SSH keys.
+cd /home && git clone https://github.com/sunny75016/harden.git && cd harden && chmod +x *.sh && echo "You can use ./harden-all.sh if you wish"
+
 IMPORTANT - USE AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR YOUR ACTIONS.
 Requests for additional scripts are welcome.
-
-Instructions - On a FRESH Ubuntu 20.04 Droplet on DigitalOcean using SSH keys.
-
-cd /home && git clone https://github.com/sunny75016/harden.git && cd harden && chmod +x *.sh && echo "You can use ./harden-all.sh if you wish"
