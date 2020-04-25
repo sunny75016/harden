@@ -6,6 +6,7 @@
 ./harden-profile.sh
 ./harden-chmod.sh
 ./harden-proc.sh
+./harden-filesystem.sh
 mkdir /backup/
 cp /etc/issue /backup/
 cp issue /etc/
