@@ -5,3 +5,5 @@ echo "readonly TMOUT" >> /etc/profile
 echo "export TMOUT" >> /etc/profile
 echo "* hard core 0" >> /etc/security/limits.conf
 echo "* soft core 0" >> /etc/security/limits.conf
+echo "fs.suid_dumpable=0" >> /etc/sysctl.conf
+sysctl -p
