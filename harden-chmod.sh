@@ -1,14 +1,13 @@
 #!/bin/bash
-chmod 600 /boot/grub/grub.cfg
-chmod 600 /etc/at.deny
-chmod 600 /etc/crontab 
-chmod 600 /etc/ssh/sshd_config
-chmod 700 /etc/cron.d
-chmod 700 /etc/cron.daily
-chmod 700 /etc/cron.hourly
-chmod 700 /etc/cron.weekly
-chmod 700 /etc/cron.monthly
-chmod o-x /usr/bin/x86_64-linux-gnu-as
-chmod o-x /usr/bin/x86_64-linux-gnu-gcc-9
-
-
+echo "Restricting access to specific files and folders"
+chmod 600 /boot/grub/grub.cfg > /dev/null
+chmod 600 /etc/at.deny > /dev/null
+chmod 600 /etc/crontab > /dev/null
+chmod 600 /etc/ssh/sshd_config > /dev/null
+chmod 700 /etc/cron.d > /dev/null
+chmod 700 /etc/cron.daily > /dev/null
+chmod 700 /etc/cron.hourly > /dev/null
+chmod 700 /etc/cron.weekly > /dev/null
+chmod 700 /etc/cron.monthly > /dev/null
+chmod o-x /usr/bin/x86_64-linux-gnu-as > /dev/null
+chmod o-x /usr/bin/x86_64-linux-gnu-gcc-9 > /dev/null
