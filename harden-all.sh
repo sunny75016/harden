@@ -18,6 +18,7 @@ cp login.defs /etc/
 cp /etc/ssh/sshd_config /backup/
 chmod +r /etc/ssh/sshd_config
 cp sshd_config /etc/ssh/
+chmod 600 /etc/ssh/sshd_config
 cp local.conf /etc/sysctl.d/
 cp coredump.conf /etc/systemd/
 #./harden-lynis.sh
