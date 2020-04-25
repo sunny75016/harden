@@ -7,6 +7,7 @@
 ./harden-chmod.sh
 ./harden-proc.sh
 ./harden-filesystem.sh
+./harden-install-programs.sh
 mkdir /backup/
 cp /etc/issue /backup/
 cp issue /etc/
@@ -20,3 +21,4 @@ cp local.conf /etc/sysctl.d/
 cp coredump.conf /etc/systemd/
 #./harden-lynis.sh
 echo "Thanks for using harden-all.sh from https://github.com/sunny75016/harden.git"
+cd /home/harden && cat final-checklist
