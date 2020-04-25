@@ -1,8 +1,8 @@
 #!/bin/bash
+./harden-ppa.sh
 ./harden-kernel.sh
 ./harden-openssl.sh
 ./harden-openssh.sh
-./harden-ppa.sh
 ./harden-profile.sh
 ./harden-chmod.sh
 ./harden-proc.sh
