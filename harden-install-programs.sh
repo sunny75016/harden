@@ -5,3 +5,4 @@ apt-get install debsums -y
 apt-get install rkhunter -y
 sed -i 's/smtpd_banner.*/smtpd_banner $myhostname ESMTP/' /etc/postfix/main.cf
 postconf -e disable_vrfy_command=yes
+apt-get install haveged -y
