@@ -6,4 +6,5 @@ echo "export TMOUT" >> /etc/profile
 echo "* hard core 0" >> /etc/security/limits.conf
 echo "* soft core 0" >> /etc/security/limits.conf
 echo "fs.suid_dumpable=0" >> /etc/sysctl.conf
+echo "kernel.kptr_restrict=2" >> /etc/sysctl.conf
 sysctl -p
