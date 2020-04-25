@@ -16,6 +16,7 @@ cp issue.net /etc/
 cp /etc/login.defs /backup/
 cp login.defs /etc/
 cp /etc/ssh/sshd_config /backup/
+chmod +r /etc/ssh/sshd_config
 #cp sshd_config /etc/ssh/
 cp local.conf /etc/sysctl.d/
 cp coredump.conf /etc/systemd/
