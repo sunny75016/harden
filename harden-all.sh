@@ -1,4 +1,5 @@
 #!/bin/bash
+./harden-passwords.sh
 ./harden-ufw.sh
 ./harden-ppa.sh
 ./harden-kernel.sh
