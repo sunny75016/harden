@@ -9,6 +9,7 @@
 ./harden-proc.sh
 ./harden-filesystem.sh
 ./harden-install-programs.sh
+./harden-stig.sh
 echo "Creating the directory /backup/ for files overwritten" 
 mkdir /backup/ > /dev/null
 cp /etc/issue /backup/ > /dev/null
