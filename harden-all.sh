@@ -21,6 +21,7 @@ cp sshd_config /etc/ssh/
 chmod 600 /etc/ssh/sshd_config
 cp local.conf /etc/sysctl.d/
 cp coredump.conf /etc/systemd/
+sysctl -p
 #./harden-lynis.sh
 echo "Thanks for using harden-all.sh from https://github.com/sunny75016/harden.git"
 cd /home/harden && cat final-checklist
