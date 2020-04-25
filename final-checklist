@@ -1,0 +1,5 @@
+** Here is your final checklist **
+1. Reboot
+2a. Manually update /etc/rkhunter.conf
+2b. Manually run  rkhunter --update && rkhunter -c
+3. Manually run   cd /home/lynis && ./lynis audit system --usecwd --verbose
