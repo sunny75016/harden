@@ -33,5 +33,7 @@ sudo systemctl start auditd
 sudo systemctl enable auditd
 echo "-w /etc/shadow -p wa -k shadow" >> /etc/audit/rules.d/audit.rules
 echo "-w /etc/passwd -p wa -k passwd" >> /etc/audit/rules.d/audit.rules
+echo "-a always,exit -F arch=b64 -S creat -F exit=-EPERM -F auid>=1000 -F auid!=4294967295 -k perm_access" >> /etc/audit/audit.rules
+echo "-a always,exit -F arch=b64 -S creat -F exit=-EACCES -F auid>=1000 -F auid!=4294967295 -k perm_access" >> /etc/audit/audit.rules
 sed -i 's/disk_full_action = SUSPEND/disk_full_action = HALT/' /etc/audit/auditd.conf
 sudo systemctl restart auditd
