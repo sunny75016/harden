@@ -2,7 +2,7 @@
 clear
 echo "Setting up LAMP stack, starting with apache2"
 apt-get update > /dev/null
-apt-get install apache2
+apt-get install apache2 -y
 systemctl start apache2
 systemctl enable apache2
 clear
