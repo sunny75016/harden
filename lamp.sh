@@ -13,5 +13,5 @@ clear
 echo "Setting up php 7.4"
 apt-get install php7.4 -y
 apt-get install libapache2-mod-php7.4 -y
-apt-get php7.4-mysql -y
+apt-get install php7.4-mysql -y
 apt-get install phpmyadmin -y
