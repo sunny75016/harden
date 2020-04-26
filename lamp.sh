@@ -7,7 +7,7 @@ systemctl start apache2
 systemctl enable apache2
 clear
 echo "Setting up MariaDB server"
-apt-get install mariadb-server
+apt-get install mariadb-server -y
 mysql_secure_installation
 clear
 echo "Setting up php 7.4"
