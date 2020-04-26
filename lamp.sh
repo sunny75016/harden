@@ -11,7 +11,10 @@ apt-get install mariadb-server -y
 mysql_secure_installation
 clear
 echo "Setting up php 7.4"
-apt-get install php7.4 -y
-apt-get install libapache2-mod-php7.4 -y
-apt-get install php7.4-mysql -y
-apt-get install phpmyadmin -y
+apt-get install php7.4 -y > /dev/null
+apt-get install libapache2-mod-php7.4 -y > /dev/null
+apt-get install php7.4-mysql -y > /dev/null
+apt-get install phpmyadmin -y 
+apt-get install php7.4-json -y > /dev/null
+apt install php7.4-intl -y > /dev/null
+apt install php7.4-imagick -y > /dev/null
