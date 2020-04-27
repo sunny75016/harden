@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "Blacklisting unwanted mounts and protocols, disabling usb-storage"
 echo "install cramfs /bin/true" >> /etc/modprobe.d/blacklist.conf
 echo "install hfs /bin/true" >> /etc/modprobe.d/blacklist.conf
