@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "Hardening PPAs for apache2, nginx, php and MariaDB"
 echo "Please follow instructions on the screen"
 sudo add-apt-repository ppa:ondrej/apache2 
