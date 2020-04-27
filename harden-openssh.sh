@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "Updating OpenSSH to version 8.2 from https://www.openssh.com/"
 echo "Installing required package dependencies..."
 sudo apt-get install build-essential zlib1g-dev libssl-dev libpam0g-dev libselinux1-dev -y > /dev/null
