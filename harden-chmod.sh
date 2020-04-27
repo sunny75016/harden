@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "Restricting access to specific files and folders"
 chmod 600 /boot/grub/grub.cfg > /dev/null
 chmod 600 /etc/at.deny > /dev/null
