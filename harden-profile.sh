@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "Disabling kernel dumps and setting timeout to 1 hour"
 echo "ulimit -c 0 > /dev/null 2>&1" > /etc/profile.d/disable-coredumps.sh
 echo "TMOUT=3600" >> /etc/profile
