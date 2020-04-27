@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "Updating to Linux Kernel v.5.6.7 mainline build for AMD64 from https://kernel.ubuntu.com/~kernel-ppa/mainline/v5.6.7/"
 apt-get update > /dev/null
 echo "Installing upgrades...(have patience!)"
