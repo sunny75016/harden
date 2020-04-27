@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo "Updating to OpenSSL v.1.1.1g from https://www.openssl.org/source/openssl-1.1.1g.tar.gz"
 echo "Installing dependencies..."
 apt-get update > /dev/null
