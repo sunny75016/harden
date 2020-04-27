@@ -16,5 +16,5 @@ apt-get install libapache2-mod-php7.4 -y > /dev/null
 apt-get install php7.4-mysql -y > /dev/null
 apt-get install phpmyadmin -y 
 apt-get install php7.4-json -y > /dev/null
-apt install php7.4-intl -y > /dev/null
-apt install php7.4-imagick -y > /dev/null
+apt-get install php7.4-intl -y > /dev/null
+apt-get install php7.4-imagick -y > /dev/null
