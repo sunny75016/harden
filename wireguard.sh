@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 echo "Installing Wireguard from Ubuntu Focal repository"
-sudo apt-get install wireguard -y
+sudo apt-get install wireguard net-tools -y
 echo "Creating wg keys"
 cd ~
 umask 077
@@ -19,3 +19,8 @@ sudo ufw allow 22/tcp
 sudo ufw allow 8443/udp
 sudo ufw allow 49022/tcp
 sudo ufw enable
+sudo ufw status verbose
+wg-quick up wg0
+sudo systemctl enable wg-quick@wg0
+sudo wg show
+ifconfig wg0
