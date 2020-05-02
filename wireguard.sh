@@ -17,4 +17,5 @@ echo "PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTRO
 echo "SaveConfig = true" >> /etc/wireguard/wg0.conf
 sudo ufw allow 22/tcp
 sudo ufw allow 8443/udp
+sudo ufw allow 49022/tcp
 sudo ufw enable
