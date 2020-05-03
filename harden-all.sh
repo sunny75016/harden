@@ -1,8 +1,7 @@
 #!/bin/bash
 ./harden-passwords.sh
 ./harden-ufw.sh
-# As the Sury ppa is giving trouble, I have disabled this. Add MariaDB repository manually.
-# ./harden-ppa.sh
+./harden-ppa.sh
 ./harden-kernel.sh
 ./harden-openssl.sh
 ./harden-openssh.sh
