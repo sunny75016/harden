@@ -1,5 +1,7 @@
 #!/bin/bash
 clear
+echo "Temporarily IPv6 has been disabled for adding PPAs. Reboot afterwards."
+sudo sysctl net.ipv6.conf.all.disable_ipv6=1
 echo "Hardening PPAs for apache2, nginx, php and MariaDB"
 echo "Please follow instructions on the screen"
 sudo add-apt-repository ppa:ondrej/apache2 
