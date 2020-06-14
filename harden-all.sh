@@ -17,3 +17,4 @@ clear
 echo "Thanks for using harden-all.sh from https://github.com/sunny75016/harden.git"
 cd /home/harden > /dev/null
 cat final-checklist
+echo "All done EXCEPT - OpenSSL, OpenSSH, Rkhnter and Lynis"
