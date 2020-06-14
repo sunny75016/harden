@@ -9,10 +9,10 @@
 ./harden-chmod.sh
 ./harden-proc.sh
 ./harden-filesystem.sh
-./harden-install-programs.sh
+#./harden-install-programs.sh
 ./harden-stig.sh
 ./harden-model-files.sh
-./harden-lynis.sh
+#./harden-lynis.sh
 clear
 echo "Thanks for using harden-all.sh from https://github.com/sunny75016/harden.git"
 cd /home/harden > /dev/null
