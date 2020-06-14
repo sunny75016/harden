@@ -12,3 +12,4 @@ chmod 700 /etc/cron.weekly > /dev/null
 chmod 700 /etc/cron.monthly > /dev/null
 chmod o-x /usr/bin/x86_64-linux-gnu-as > /dev/null
 chmod o-x /usr/bin/x86_64-linux-gnu-gcc-9 > /dev/null
+echo "Please ignore if you saw an error. That is because the compiler is not installed and does not need harden."
