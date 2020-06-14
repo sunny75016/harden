@@ -5,7 +5,7 @@ sudo sysctl net.ipv6.conf.all.disable_ipv6=1
 echo "Hardening PPAs for apache2, nginx, php and MariaDB"
 echo "Please follow instructions on the screen"
 sudo add-apt-repository ppa:ondrej/apache2 
-sudo add-apt-repository ppa:ondrej/nginx-mainline
+sudo add-apt-repository ppa:ondrej/nginx
 sudo add-apt-repository ppa:ondrej/php
 echo "Enter 1 for Bionic Beaver, 2 for Focal Fossa"
 read n
