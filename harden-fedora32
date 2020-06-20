@@ -1,0 +1,15 @@
+#!/bin/bash
+# Prohibit core dump method 1
+echo "* hard core 0" >> /etc/security/limits.conf
+echo "* soft core 0" >> /etc/security/limits.conf
+# Prohibit core dump method 2
+sed -i 's/#Storage=external/Storage-none/' /etc/systemd/coredump.conf
+sed -i 's/#ProcessSizeMax=2G/ProcessSizeMax=0/' /etc/systemd/coredump.conf
+# Prohibit core dump method 3
+echo "ulimit -c 0" >> /etc/profile
+# Increase hash rounds for passwords
+sed -i 's/#SHA_CRYPT_MAX_ROUNDS 5000/SHA_CRYPT_MAX_ROUNDS 65525/' /etc/login.defs
+# Change password change discipline
+sed -i 's/PASS_MIN_DAYS   0/PASS_MIN_DAYS 1/' /etc/login.defs
+sed -i 's/99999/730/' /etc/login.defs
+sed -i 's/022/027/' /etc/login.defs
