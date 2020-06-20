@@ -13,3 +13,9 @@ sed -i 's/#SHA_CRYPT_MAX_ROUNDS 5000/SHA_CRYPT_MAX_ROUNDS 65525/' /etc/login.def
 sed -i 's/PASS_MIN_DAYS   0/PASS_MIN_DAYS 1/' /etc/login.defs
 sed -i 's/99999/730/' /etc/login.defs
 sed -i 's/022/027/' /etc/login.defs
+sed -i 's/022/027/' /etc/bashrc
+sed -i 's/022/027/' /etc/csh.cshrc
+# Disable unnecessary modules
+echo "install udf /bin/true" >> /etc/modprobe.d/blacklist.conf
+# Disable USB
+echo "blacklist usb-storage" >> /etc/modprobe.d/blacklist.conf
