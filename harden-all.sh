@@ -2,7 +2,7 @@
 ./harden-passwords.sh
 ./harden-ufw.sh
 ./harden-ppa.sh
-./harden-kernel.sh
+#./harden-kernel.sh
 ./harden-openssl.sh
 ./harden-openssh.sh
 ./harden-profile.sh
