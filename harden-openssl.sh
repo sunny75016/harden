@@ -1,15 +1,15 @@
 #!/bin/bash
 clear
-echo "Updating to OpenSSL v.1.1.1h from https://www.openssl.org/source/openssl-1.1.1h.tar.gz"
+echo "Updating to OpenSSL v.1.1.1i from https://www.openssl.org/source/openssl-1.1.1h.tar.gz"
 echo "Installing dependencies..."
 apt-get update > /dev/null
 apt-get install make -y > /dev/null
 apt-get install gcc -y > /dev/null
 cd /usr/src  > /dev/null
 echo "Downloading OpenSSL..."
-sudo wget https://www.openssl.org/source/openssl-1.1.1h.tar.gz --no-check-certificate > /dev/null
-sudo tar -zxf openssl-1.1.1h.tar.gz > /dev/null
-cd openssl-1.1.1h > /dev/null
+sudo wget https://www.openssl.org/source/openssl-1.1.1i.tar.gz --no-check-certificate > /dev/null
+sudo tar -zxf openssl-1.1.1i.tar.gz > /dev/null
+cd openssl-1.1.1i > /dev/null
 ./config > /dev/null
 echo "Installing OpenSSL...(have patience!)"
 echo "Running make"
